@@ -24,12 +24,6 @@ class CommentSerializer(serializers.ModelSerializer):
         depth = 1
 
 
-class ReplySerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Reply
-        fields = ['id', 'text', 'comment_id', 'user_id']
-        depth = 1
-
 class PaymentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Payment
@@ -37,4 +31,12 @@ class PaymentSerializer(serializers.ModelSerializer):
         depth = 1
 
 
+class ReplySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Reply
+        fields = ['id', 'text', 'comment_id', 'user_id']
+        depth = 1
+
     comment_id = serializers.IntegerField(write_only = True)
+
+   
