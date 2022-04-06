@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'authentication.apps.AuthenticationConfig',
     'corsheaders',
+    'basketball',
     'cars.apps.CarsConfig'  # This app is for example use only
 ]
 
@@ -107,6 +108,9 @@ USE_L10N = True
 
 USE_TZ = True
 
+USE_L10N = False
+
+DATE_INPUT_FORMATS = ['%m/%Y']  
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/

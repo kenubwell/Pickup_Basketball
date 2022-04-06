@@ -1,7 +1,3 @@
-# ReactDjango_JWT_StarterCode
+# React + Django applications using JWT for authentication/authorization
 
-Starter code for full stack React + Django applications using JWT for authentication/authorization and a fully working register/login system on the React side
-
-## NOTE
-
-"cars" app in Django backend for example purposes only. Study it closely and review provided resources to understand how to properly create protected endpoints that require a JWT token for authorization.
+This is the initialization of my Capstone for devCodeCamp, more details will be provided upon completion of this project...
