@@ -19,18 +19,18 @@ class Courts(APIView):
         return Response(serializers.data, status=status.HTTP_200_OK)
 
 
-@permission_classes([IsAuthenticated])
-class CourtComment(APIView):
-    
-    def post(self, request):
-        serializers = CommentSerializer(data=request.data)
-        serializers.is_valid(raise_exception=True)
-        serializers.save(user=request.user)
-        return Response(serializers.data, status=status.HTTP_201_CREATED)
-
 
 @permission_classes([IsAuthenticated])
 class CommentActions(APIView):
+
+    def post(self, request, pk):
+        court_id = pk
+        temp_data = request.data
+        temp_data['court_id'] = court_id
+        serializers = CommentSerializer(data=temp_data)
+        serializers.is_valid(raise_exception=True)
+        serializers.save(user=request.user)
+        return Response(serializers.data, status=status.HTTP_201_CREATED)
 
     def get(self, request, pk):
         court_comments = Comment.objects.filter(court_id = pk)

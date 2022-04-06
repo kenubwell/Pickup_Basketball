@@ -13,7 +13,7 @@ class Court(models.Model):
 class Comment(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)  
     text = models.CharField(max_length=255)
-    court_id = models.ForeignKey(Court, on_delete=models.CASCADE)  
+    court = models.ForeignKey(Court, on_delete=models.CASCADE)  
 
 
 class Reply(models.Model):
@@ -23,7 +23,7 @@ class Reply(models.Model):
 
 class Payment(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    cardnumber = models.IntegerField()
+    cardnumber = models.CharField(max_length=25)
     expdate = models.DateField('%m/%y')
     cvcnumber = models.IntegerField()
 

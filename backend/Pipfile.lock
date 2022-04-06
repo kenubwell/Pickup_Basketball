@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "afd67b44fbce974ab3585ec96bb6fc63f8b9e2f2d8216b60a6e4110d68bf1715"
+            "sha256": "feb6674f94b3f7deb040592b641b9785a60e9a4e79864620e7435dc1066712b4"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -39,6 +39,14 @@
             ],
             "index": "pypi",
             "version": "==3.11.0"
+        },
+        "django-credit-cards": {
+            "hashes": [
+                "sha256:63f651070d556689d57907d49a5fd6a12df698db303665c0daebdcefc34abe96",
+                "sha256:e9c51399b718375cbddee18c13559de154c8de1b1cae4ae9e5db29d5df258bff"
+            ],
+            "index": "pypi",
+            "version": "==0.4.1"
         },
         "djangorestframework": {
             "hashes": [
