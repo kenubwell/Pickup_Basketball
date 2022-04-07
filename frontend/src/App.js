@@ -13,6 +13,9 @@ import Footer from "./components/Footer/Footer";
 
 // Util Imports
 import PrivateRoute from "./utils/PrivateRoute";
+import CourtsPage from "./pages/CourtsPage/CourtsPage";
+import SplashPage from "./pages/SplashPage/SplashPage";
+import VideoPage from "./pages/VideoPage/VideoPage";
 
 function App() {
   return (
@@ -20,7 +23,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route
-          path="/"
+          path="/home"
           element={
             <PrivateRoute>
               <HomePage />
@@ -29,6 +32,9 @@ function App() {
         />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/default" element={<SplashPage />} />
+        <Route path="/courts" element={<CourtsPage />} />
+        <Route path="/videos" element={<VideoPage />} />
       </Routes>
       <Footer />
     </div>

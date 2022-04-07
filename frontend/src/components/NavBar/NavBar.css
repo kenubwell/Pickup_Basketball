@@ -1,35 +1,25 @@
-ul {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-}
-
-li {
-  font-size: 1.25rem;
-}
-
 .navBar {
-  background: steelblue;
-  box-shadow: 4px 2px 5px gray;
+  background: black;
+  box-shadow: 4px 2px 5px black;
   color: white;
-  margin-bottom: 2rem;
-  padding: 1.5rem 2rem;
+  margin-bottom: 0.09rem;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 10;
 }
 
-.navBar button {
-  background: transparent;
-  border: 2px solid white;
-  color: white;
-  padding: 0.4rem 0.5rem;
+.logo-brand {
+  margin-right: auto;
 }
 
-.navBar button:hover {
-  background: white;
-  color: steelblue;
-  cursor: pointer;
-}
-
-.brand {
-  cursor: pointer;
-  font-size: 2rem;
+.login-button {
+  background-color: orange;
+  border-radius: 10px;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  color: black;
+  border-color: orange;
+  font-size: 17px;
 }

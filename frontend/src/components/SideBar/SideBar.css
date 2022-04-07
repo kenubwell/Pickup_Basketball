@@ -1,0 +1,36 @@
+.sidebar-bg{
+    height: 100vh;
+    width: 226px;
+    background-color: black;
+    box-shadow: 4px 2px 5px black;
+    z-index: 1;
+}
+
+.sav-text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20px 0px 8px 16px;
+    list-style: none;
+    height: 60px;
+  }
+
+  .sav-text a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+  }
+
+  .sav-text a:hover {
+    background-color: #1a83ff;
+  }
+  
+  span {
+    margin-left: 16px;
+  }
