@@ -3,7 +3,6 @@
     width: 226px;
     background-color: black;
     box-shadow: 4px 2px 5px black;
-    z-index: 1;
 }
 
 .sav-text {
@@ -28,7 +27,7 @@
   }
 
   .sav-text a:hover {
-    background-color: #1a83ff;
+    background-color: orange;
   }
   
   span {

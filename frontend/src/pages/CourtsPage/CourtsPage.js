@@ -7,7 +7,8 @@ import SideBar from "../../components/SideBar/SideBar";
 const CourtsPage = () => {
     return ( 
         <div>
-            <SideBar/>
+            <div><SideBar/></div>
+            <p></p>
         </div>
      );
 }
