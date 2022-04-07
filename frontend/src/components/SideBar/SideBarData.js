@@ -20,7 +20,7 @@ export const SideBarData = [
         icon: <FaIcons.FaCartPlus />,
       },
       {
-        title: 'Videos',
+        title: 'Local Videos',
         path: '/videos',
         icon: <IoIcons.IoMdPeople />,
       },

@@ -16,6 +16,10 @@ import PrivateRoute from "./utils/PrivateRoute";
 import CourtsPage from "./pages/CourtsPage/CourtsPage";
 import SplashPage from "./pages/SplashPage/SplashPage";
 import VideoPage from "./pages/VideoPage/VideoPage";
+import WaterlooPage from "./pages/WaterlooPage/WaterlooPage";
+import LionGatePage from "./pages/LiongatePage/LionGatePage";
+import CedarParkPage from "./pages/CedarparkPage/CedarParkPage";
+import MeadowbrookPage from "./pages/MeadowbrookPage/MeadowbrookPage";
 
 function App() {
   return (
@@ -35,6 +39,10 @@ function App() {
         <Route path="/default" element={<SplashPage />} />
         <Route path="/courts" element={<CourtsPage />} />
         <Route path="/videos" element={<VideoPage />} />
+        <Route path="/courts/waterloo" element={<WaterlooPage />} />
+        <Route path="/courts/liongate" element={<LionGatePage />} />
+        <Route path="/courts/cedarpark" element={<CedarParkPage />} />
+        <Route path="/courts/meadow" element={<MeadowbrookPage />} />
       </Routes>
       <Footer />
     </div>

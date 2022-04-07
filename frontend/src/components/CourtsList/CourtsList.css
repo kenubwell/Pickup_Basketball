@@ -1,0 +1,18 @@
+.courts-title{
+    margin-left: 50rem;
+    margin-top: 1.8rem;
+    margin-bottom: 4rem;
+ }
+
+ .courtlist-contr{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     column-gap: 7rem;
+     row-gap: 6rem;
+     margin-left: 18rem;
+ }
+
+ .court-image{
+     height: 300px;
+     width: 500px;
+ }

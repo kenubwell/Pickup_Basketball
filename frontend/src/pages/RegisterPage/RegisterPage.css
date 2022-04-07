@@ -18,7 +18,7 @@
   
   .reg-label {
     font-weight: bold;
-    padding-left: 0.5rem;
+    padding-left: 2rem;
     padding-right: 0.7rem;
     font-size: large;
     color: white;
@@ -27,7 +27,7 @@
   
   .reg-label-un {
     font-weight: bold;
-    padding-left: 0.9rem;
+    padding-left: 2.3rem;
     padding-right: 0.4rem;
     font-size: large;
     color: white;
@@ -36,7 +36,7 @@
   
   .reg-label-em {
     font-weight: bold;
-    padding-left: 3.1rem;
+    padding-left: 4.9rem;
     font-size: large;
     color: white;
     padding-bottom: 1.5rem;
@@ -44,7 +44,7 @@
   
   .reg-label-pw {
     font-weight: bold;
-    padding-left: 1rem;
+    padding-left: 2.5rem;
     font-size: large;
     padding-right: 1rem;
     color: white;
@@ -65,7 +65,7 @@
   
   .reg-input-em {
     width: 55%;
-    margin-left: 1.3rem;
+    margin-left: 1rem;
     margin-bottom: 1.3rem;
   }
   
