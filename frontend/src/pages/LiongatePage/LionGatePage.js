@@ -3,13 +3,14 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import "./LionGatePage.css";
 import SideBar from "../../components/SideBar/SideBar";
+import LionGateComp from "../../components/LionGateComp/LionGateComp";
 
 
 const LionGatePage = () => {
     return ( 
         <div className="courts-container">
             <div><SideBar/></div>
-            <div>LionGate</div>
+            <div><LionGateComp/></div>
         </div>
         
      );
