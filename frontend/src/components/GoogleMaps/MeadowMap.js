@@ -1,20 +1,20 @@
 import React from "react";
 import {InfoWindow, withScriptjs, withGoogleMap, GoogleMap, Marker} from "react-google-maps";
 
-class LionGateMap extends React.Component {
+class MeadowMap extends React.Component {
 
     render(){
 
         const MapWithAMarker = withScriptjs(withGoogleMap(props =>
             <GoogleMap
               defaultZoom={12}
-              defaultCenter={{ lat: 39.24697, lng: -76.81994 }}
+              defaultCenter={{ lat: 39.24944, lng: -76.82333 }}
             >
               <Marker
-                position={{ lat: 39.24697, lng: -76.81994 }}
+                position={{ lat: 39.24944, lng: -76.82333 }}
               >
                 <InfoWindow>
-                  <div>Long Gate Playground, 5001 Meadowbrook Ln, Ellicott City, MD 21043</div>
+                  <div>5001 Meadowbrook Ln, Ellicott City, MD 21043</div>
                 </InfoWindow>
                 </Marker>
             </GoogleMap>
@@ -32,4 +32,4 @@ class LionGateMap extends React.Component {
     
 }
  
-export default LionGateMap;
+export default MeadowMap;

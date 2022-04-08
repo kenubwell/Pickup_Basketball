@@ -7,11 +7,11 @@ export const SideBarData = [
     {
         title: "Home",
         icon: <AiIcons.AiFillHome />,
-        path: "/home"
+        path: "/default"
     },
     {
         title: 'Calendar',
-        path: '/home',
+        path: '/',
         icon: <IoIcons.IoIosPaper />,
       },
       {

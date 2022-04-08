@@ -3,13 +3,14 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import "./CedarParkPage.css";
 import SideBar from "../../components/SideBar/SideBar";
+import CedarParkComp from "../../components/CedarParkComp/CedarParkComp";
 
 
 const CedarParkPage = () => {
     return ( 
         <div className="courts-container">
             <div><SideBar/></div>
-            <div>Cedar Park</div>
+            <div><CedarParkComp/></div>
         </div>
         
      );
