@@ -10,7 +10,7 @@ const LionGateComp = () => {
             <p><h2 className="lion-title">Lions Gate Basketball Court</h2></p>
         </div>
         <div className="liongate-contain">
-            <div className="court-image-contain">
+            <div className="lion-image-contain">
                 <img src ="/images/lionsgatecourt.jpg" className = "lion-image" alt = "lg court"/>
             </div>
             <div className="lion-map-contain">

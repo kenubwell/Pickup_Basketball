@@ -1,5 +1,5 @@
 .courts-title{
-    margin-left: 50rem;
+    margin-left: 49.5rem;
     margin-top: 1.9rem;
     margin-bottom: 4.1rem;
  }
@@ -15,4 +15,11 @@
  .court-image{
      height: 300px;
      width: 500px;
+ }
+
+ .list-courts-title{
+     text-align: center;
+     margin-top: 1rem;
+     font-size: 20px;
+     font-weight: bold;
  }

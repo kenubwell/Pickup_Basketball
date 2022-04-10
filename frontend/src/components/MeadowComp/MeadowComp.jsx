@@ -2,6 +2,7 @@ import react from "react";
 import './MeadowComp.css';
 import { Link } from "react-router-dom";
 import MeadowMap from "../GoogleMaps/MeadowMap";
+import Payment from "../Payment/Payment";
 
 const MeadowComp = () => {
     return ( 
@@ -12,6 +13,10 @@ const MeadowComp = () => {
             <div className="meadow-contain">
                 <div className="meadow-image-contain">
                     <img src ="/images/meadowbrook.jpg" className = "meadow-image" alt = "mb court"/>
+                    <div className="notice-pay-contain">
+                        <div className="notice-fee"><medium className='notice-text'><b>Note: </b>Small fee of $5.00 to reserve.</medium></div>
+                        <div><Payment/></div>
+                    </div>
                 </div>
                 <div className="meadow-map-contain">
                     <MeadowMap/>

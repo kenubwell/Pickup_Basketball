@@ -1,0 +1,9 @@
+.payment-button{
+    padding: 4px 4px;
+    background-color: orange;
+    font-weight: bold;
+    border-color: orange;
+    border-radius: 10px;
+    margin-left: 7.9rem;
+    margin-top: 0.8rem;
+}

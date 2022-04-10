@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from "react";
 import './Calendar.css';
 import { Col, Row } from "reactstrap";
 import FullCalendar from "@fullcalendar/react";
@@ -7,16 +8,26 @@ import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin, { Draggable } from "@fullcalendar/interaction";
 import Alert from "sweetalert2";
 
+let counter1 = 1;
+let counter2 = 1;
+let counter3 = 1;
+let counter4 = 1;
+let counter5 = 1;
+let counter6 = 1;
+let counter7 = 1;
+let newcounter = null;
+
 class Calendar extends React.Component {
+
     state = {
       events: [
-        { title: "Waterloo (10:00 a.m.)", id: "1" },
-        { title: "Waterloo (03:00 p.m.)", id: "2" },
-        { title: "Lions Gate (10:00 a.m.)", id: "3" },
-        { title: "Lions Gate (03:00 p.m.)", id: "4" },
-        { title: "Cedar Park (10:00 a.m.)", id: "5" },
-        { title: "Cedar Park (03:00 p.m.)", id: "6" },
-        { title: "Meadowbrook (02:00 p.m.)", id: "7" }
+        { title: "Waterloo (10:00 a.m.)", id: "1"},
+        { title: "Waterloo (03:00 p.m.)", id: "2"},
+        { title: "Lions Gate (10:00 a.m.)", id: "3"},
+        { title: "Lions Gate (03:00 p.m.)", id: "4"},
+        { title: "Cedar Park (10:00 a.m.)", id: "5"},
+        { title: "Cedar Park (03:00 p.m.)", id: "6"},
+        { title: "Meadowbrook (02:00 p.m.)", id: "7"}
       ]
     };
   
@@ -42,6 +53,28 @@ class Calendar extends React.Component {
      * when we click on event we are displaying event details
      */
     eventClick = eventClick => {
+        if (eventClick.event.title == "Waterloo (10:00 a.m.)"){
+              newcounter = counter1;
+     
+        }
+        else if (eventClick.event.title == "Waterloo (03:00 p.m.)"){
+              newcounter = counter2;
+        }
+        else if (eventClick.event.title == "Lions Gate (10:00 a.m.)"){
+              newcounter = counter3;
+        }
+        else if (eventClick.event.title == "Lions Gate (03:00 p.m.)"){
+              newcounter = counter4;
+        }
+        else if (eventClick.event.title == "Cedar Park (10:00 a.m.)"){
+              newcounter = counter5;
+        }
+        else if (eventClick.event.title == "Cedar Park (03:00 p.m.)"){
+              newcounter = counter6;
+        }
+        else if (eventClick.event.title == "Meadowbrook (02:00 p.m.)"){
+              newcounter = counter7;
+        }
       Alert.fire({
         title: eventClick.event.title,
         html:
@@ -56,8 +89,8 @@ class Calendar extends React.Component {
         </tr>
         <tr >
         <td>Attendance</td>
-        <td><strong>
-          <p>Number:<span>0</span></p><button>Yes</button>
+        <td><strong> `+ 
+        newcounter + `
         </strong></td>
         </tr>
         </tbody>
@@ -65,14 +98,50 @@ class Calendar extends React.Component {
         </div>`,
   
         showCancelButton: true,
+        showDenyButton: true,
         confirmButtonColor: "black",
+        denyButtonColor: "grey",
         cancelButtonColor: "orange",
         confirmButtonText: "Delete",
-        cancelButtonText: "Close"
+        cancelButtonText: "Close",
+        denyButtonText: "Attend"
       }).then(result => {
-        if (result.value) {
+        if (result.isConfirmed) {
           eventClick.event.remove(); // It will remove event from the calendar
           Alert.fire("Deleted", "Scheduled Court has been deleted.", "success");
+        }
+        else if (result.isDenied){
+            if (eventClick.event.title == "Waterloo (10:00 a.m.)"){
+                counter1 += 1;
+                Alert.fire("Attendance Recorded", "Have fun hooping", "success");
+          }
+            else if (eventClick.event.title == "Waterloo (03:00 p.m.)"){
+                counter2 += 1;
+                Alert.fire("Attendance Recorded", "Have fun hooping", "success");
+          }
+            
+            else if (eventClick.event.title == "Lions Gate (10:00 a.m.)"){
+                counter3 += 1;
+                Alert.fire("Attendance Recorded", "Have fun hooping", "success");
+          }
+            else if (eventClick.event.title == "Lions Gate (03:00 p.m.)"){
+                counter4 += 1;
+                Alert.fire("Attendance Recorded", "Have fun hooping", "success");
+          }
+            
+            else if (eventClick.event.title == "Cedar Park (10:00 a.m.)"){
+                counter5 += 1;
+                Alert.fire("Attendance Recorded", "Have fun hooping", "success");
+          }
+            else if (eventClick.event.title == "Cedar Park (03:00 p.m.)"){
+                counter6 += 1;
+                Alert.fire("Attendance Recorded", "Have fun hooping", "success");
+          }
+            else if (eventClick.event.title == "Meadowbrook (02:00 p.m.)"){
+                counter7 += 1;
+                Alert.fire("Attendance Recorded", "Have fun hooping", "success");
+          }
+            
         }
       });
     };

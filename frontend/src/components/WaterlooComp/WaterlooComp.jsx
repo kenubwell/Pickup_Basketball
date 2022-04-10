@@ -10,7 +10,7 @@ const WaterlooComp = () => {
                 <p><h2 className="water-title">Waterloo Park Basketball Court</h2></p>
             </div>
             <div className="waterloo-contain">
-                <div className="court-image-contain">
+                <div className="water-image-contain">
                     <img src ="/images/waterloocourt.jpg" className = "water-image" alt = "wl court"/>
                 </div>
                 <div className="water-map-contain">
