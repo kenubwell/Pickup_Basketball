@@ -1,10 +1,9 @@
-.register-container {
+.register-container-two {
     display: flex;
     max-width: 1200px;
     margin: auto;
     flex-direction: column;
     align-items: center;
-    margin-top: 4rem;
   }
   
   .reg-contain {
@@ -14,6 +13,7 @@
     padding-right: 3.2rem;
     padding-bottom: 2rem;
     border-radius: 20px;
+    margin-top: 10rem;
   }
   
   .reg-label {

@@ -18,7 +18,7 @@ const RegisterPage = () => {
   );
 
   return (
-    <div className="register-container">
+    <div className="register-container-two">
       <form className="" onSubmit={handleSubmit}>
         <div className="reg-contain">
           <div>

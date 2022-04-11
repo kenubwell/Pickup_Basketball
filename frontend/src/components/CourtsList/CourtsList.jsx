@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const CourtsList = () => {
     return ( 
         <div>
-            <div><h2 className="courts-title">Courts</h2></div>
+            <div className="courts-title"><h2>Courts</h2></div>
             <div className="courtlist-contr">
                 <div>
                     <Link to ="/courts/waterloo"><img src ="/images/waterloocourt.jpg" className = "court-image" alt = "wl court"/></Link>

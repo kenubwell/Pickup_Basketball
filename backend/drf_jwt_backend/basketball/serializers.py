@@ -23,9 +23,6 @@ class CommentSerializer(serializers.ModelSerializer):
         fields = ['id', 'text', 'court_id', 'user']
         depth = 1
     
-    court_id = serializers.IntegerField(write_only = True)
-
-
 class PaymentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Payment

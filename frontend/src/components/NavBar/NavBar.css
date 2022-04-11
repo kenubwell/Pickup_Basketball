@@ -2,12 +2,13 @@
   background: black;
   box-shadow: 4px 2px 5px black;
   color: white;
-  /* margin-bottom: 0.09rem; */
-  padding: .9rem 2rem;
+  padding: .6rem 2rem;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   z-index: 10;
+  position: fixed;
+  width: 100%;
 }
 
 .logo-brand {
@@ -17,9 +18,10 @@
 .login-button {
   background-color: orange;
   border-radius: 10px;
-  padding: 0.7rem 1rem;
+  padding: 0.4rem .7rem;
   font-weight: bold;
   color: black;
   border-color: orange;
-  font-size: 17px;
+  font-size: 14px;
+  margin-right: .4rem;
 }

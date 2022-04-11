@@ -36,7 +36,7 @@ const LoginPage = () => {
         </div>
         <div className="login-button-contain">
           <div>
-            <button className="login-button">Login</button>
+            <button className="submit-button">Submit</button>
           </div>
         </div>
         <div className="login-register">

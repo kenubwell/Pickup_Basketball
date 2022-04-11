@@ -11,26 +11,32 @@ from .serializers import CommentSerializer, ReplySerializer, PaymentSerializer, 
 
 
 @permission_classes([AllowAny])
-class Courts(APIView):
+class CourtsActions(APIView):
 
     def get(self, request, format=None):
         courts = Court.objects.all()
         serializers = CourtSerializer(courts, many=True)
         return Response(serializers.data, status=status.HTTP_200_OK)
-
+    
+    def post(self, request):
+        serializers = CommentSerializer(data=request.data)
+        # the following validates that API user input is true or accurate to the database
+        serializers.is_valid(raise_exception=True)
+        serializers.save(user=request.user)
+        return Response(serializers.data, status=status.HTTP_201_CREATED)
 
 
 @permission_classes([IsAuthenticated])
 class CommentActions(APIView):
 
-    def post(self, request, pk):
-        court_id = pk
-        temp_data = request.data
-        temp_data['court_id'] = court_id
-        serializers = CommentSerializer(data=temp_data)
-        serializers.is_valid(raise_exception=True)
-        serializers.save(user=request.user)
-        return Response(serializers.data, status=status.HTTP_201_CREATED)
+    # def post(self, request, pk):
+    #     court_id = pk
+    #     temp_data = request.data
+    #     temp_data['court_id'] = court_id
+    #     serializers = CommentSerializer(data=temp_data)
+    #     serializers.is_valid(raise_exception=True)
+    #     serializers.save(user=request.user)
+    #     return Response(serializers.data, status=status.HTTP_201_CREATED)
 
     def get(self, request, pk):
         court_comments = Comment.objects.filter(court_id = pk)

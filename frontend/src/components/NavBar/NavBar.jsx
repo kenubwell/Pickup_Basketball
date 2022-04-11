@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className="navBar">
       <div className="logo-brand">
-          <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+          <Link to="/default" style={{ textDecoration: "none", color: "white" }}>
             <h1>HoCo Pickup</h1>
           </Link>
       </div>

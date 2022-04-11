@@ -2,6 +2,8 @@ import React from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
+import * as GiIcons from 'react-icons/gi';
+import * as IoIcons5 from 'react-icons/io5';
 
 export const SideBarData = [
     {
@@ -10,24 +12,24 @@ export const SideBarData = [
         path: "/default"
     },
     {
-        title: 'Calendar',
-        path: '/',
-        icon: <IoIcons.IoIosPaper />,
-      },
-      {
         title: 'Courts',
         path: '/courts',
-        icon: <FaIcons.FaCartPlus />,
+        icon: <GiIcons.GiBasketballBasket />,
+      },
+      {
+        title: 'Calendar',
+        path: '/',
+        icon: <IoIcons.IoIosPaper  />,
       },
       {
         title: 'HoCo Videos',
         path: '/videos',
-        icon: <IoIcons.IoMdPeople />,
+        icon: <FaIcons.FaVideoSlash />,
       },
       {
         title: 'Local Games',
         path: '/localgames',
-        icon: <FaIcons.FaEnvelopeOpenText />,
+        icon: <IoIcons5.IoPeopleSharp />,
       },
       {
         title: 'About Me',
