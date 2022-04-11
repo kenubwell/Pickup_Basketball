@@ -40,7 +40,7 @@ const LoginPage = () => {
           </div>
         </div>
         <div className="login-register">
-          <Link to="/register" ><b>Click to Register</b></Link>
+          <Link to="/register" ><div className="register-here-text">Register Here</div></Link>
         </div>
       </form>
     </div>

@@ -51,6 +51,11 @@ class CommentActions(APIView):
 
 @permission_classes([IsAuthenticated])
 class CourtLike(APIView):
+
+    def get(self, request, pk):
+        court = Court.objects.filter(id = pk)
+        serializers = CourtSerializer(court, many=True)
+        return Response(serializers.data, status=status.HTTP_200_OK)
     
     def put(self, request, pk, format=None):
         court = get_object_or_404(Court, pk=pk)

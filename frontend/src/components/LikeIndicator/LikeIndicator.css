@@ -1,0 +1,33 @@
+.likes-overall-contain{
+    margin-top: 1rem;
+}
+
+.like-or-dis-text{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.likes-contain-flex{
+    display: flex;
+    margin-top: .6rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.like-button{
+    padding: 0px 2px;
+    background-color: orange;
+    color: black;
+    margin-left: 1rem;
+    border-color: orange;
+    
+}
+
+.dislike-button{
+    padding: 0px 2px;
+    background-color: orange;
+    color: black;
+    margin-left: .6rem;
+    border-color: orange;
+}

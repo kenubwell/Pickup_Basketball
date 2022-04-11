@@ -29,7 +29,7 @@
 .login-button-contain {
   display: flex;
   justify-content: flex-end;
-  padding-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
   padding-top: 0.5rem;
 }
 
@@ -59,4 +59,9 @@
 .login-notice {
   font-weight: bold;
   margin-top: 1rem;
+}
+
+.register-here-text{
+  font-weight: bold;
+  font-size: 14px;
 }
