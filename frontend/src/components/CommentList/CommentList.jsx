@@ -1,6 +1,7 @@
 import React from "react";
 import './CommentList.css';
 import Comment from "../Comment/Comment";
+import ReplyList from "../ReplyList/ReplyList";
 
 const CommentList = (props) => {
     return ( 
@@ -11,6 +12,7 @@ const CommentList = (props) => {
                 <div className="list-text">Username:<span className="orange-text">{comment.user.username} </span></div>
                 <div className="list-text">Comment:<span className="orange-text">{comment.text}</span></div>
                 <div><Comment id={comment.id} {...props}/></div>
+                <div><ReplyList id={comment.id} {...props}/></div>
             </div>
         )
         })}

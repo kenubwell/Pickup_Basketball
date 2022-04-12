@@ -15,6 +15,7 @@ const Comment = (props) => {
          "text": replyText
          }
          props.postReply(newReplyPost);
+         props.getAllComments();
      }
 
      function handleSecondClick(){

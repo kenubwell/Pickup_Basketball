@@ -13,7 +13,7 @@ const LionGateComp = () => {
     const [allComments, setAllComments] = useState([]);
     const [court, setCourt] = useState([]);
     const [user, token] = useAuth();
-
+ 
     useEffect(() => {
         getAllComments();
         getCourt();
@@ -62,7 +62,7 @@ const LionGateComp = () => {
             Authorization: 'Bearer ' + token
           }
         });
-        getAllComments();
+        getCourt();
       }
 
       async function postDisLike(){
@@ -71,7 +71,7 @@ const LionGateComp = () => {
             Authorization: 'Bearer ' + token
           }
         });
-        getAllComments();
+        getCourt();
       }
 
       async function deleteComment(id){
@@ -95,6 +95,7 @@ const LionGateComp = () => {
       
       }
 
+    
     return ( 
         <div>
         <div>

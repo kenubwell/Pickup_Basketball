@@ -10,6 +10,7 @@ const CommentForm = (props) => {
     const handleSubmit = (event) => {
       event.preventDefault(); 
       props.postComment(comment);
+      props.getAllComments();
       setComment('');
     
 
