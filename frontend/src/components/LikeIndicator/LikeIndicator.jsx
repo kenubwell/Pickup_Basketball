@@ -22,7 +22,7 @@ const LikeIndicator = (props) => {
             <div className="likes-overall-contain" key = {index}>
                 <div className="like-or-dis-text">Do you Like or Dislike this Court?</div>
                 <div className="likes-contain-flex">
-                    <div className><b>Likes:</b> {court.likes}<span><b>DisLikes:</b> {court.dislikes}</span></div>
+                    <div className><b className="like-size-bg">Likes:</b> {court.likes}<span><b className="like-size-bg">DisLikes:</b> {court.dislikes}</span></div>
                     <div><button className="like-button" onClick={() => {handleClick()}}><BsCheckLg/></button></div>
                     <div><button className="dislike-button"  onClick={() => {handleSecondClick()}}><BsXLg/></button></div>
                 </div>

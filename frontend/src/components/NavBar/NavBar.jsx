@@ -12,7 +12,7 @@ const Navbar = () => {
     <div className="navBar">
       <div className="logo-brand">
           <Link to="/default" style={{ textDecoration: "none", color: "white" }}>
-            <h1>HoCo Pickup</h1>
+            <h1>HoCo<img src ="/images/basketball-logo.jpg" className = "header-logo" alt = "basketball"/>Pickup</h1>
           </Link>
       </div>
       <div>

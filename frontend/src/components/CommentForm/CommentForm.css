@@ -1,5 +1,5 @@
 .comm-form-contain{
-    margin-top: 3rem;
+    margin-top: 2.8rem;
     margin-left: 36.5rem;
 }
 
@@ -10,6 +10,13 @@
     width: 495px;
   }
   
+  .comment-form-question{
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 3rem;
+    padding-bottom: 1rem;
+  }
+
   .comment-label {
     padding-right: 0.5rem;
     font-size: 16px;
