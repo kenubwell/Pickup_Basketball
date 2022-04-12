@@ -53,8 +53,6 @@ const Comment = (props) => {
         props.getAllComments();
     }
 
-    
-
     return ( 
     <div>
         <div className = 'two-button-contain'>

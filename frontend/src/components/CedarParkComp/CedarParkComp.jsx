@@ -17,6 +17,7 @@ const CedarParkComp = () => {
     useEffect(() => {
         getAllComments();
         getCourt();
+        deleteComment();
       }, [])
     
 
@@ -60,6 +61,7 @@ const CedarParkComp = () => {
             Authorization: 'Bearer ' + token
           }
         });
+        getCourt();
       }
 
       async function postDisLike(){
@@ -68,7 +70,18 @@ const CedarParkComp = () => {
             Authorization: 'Bearer ' + token
           }
         });
+        getCourt();
       }
+
+      async function deleteComment(id){
+        let response = await axios.delete(`http://127.0.0.1:8000/comment/${id}/`, {
+          headers: {
+            Authorization: 'Bearer ' + token
+          }
+        });
+        getAllComments();
+      }
+
     return ( 
         <div>
         <div>
@@ -87,7 +100,7 @@ const CedarParkComp = () => {
         </div>
         <div>
             <div><CommentForm postComment = {postComment}/></div>
-            <div><CommentList allComments = {allComments}/></div>
+            <div><CommentList allComments = {allComments} deleteComment = {deleteComment} getAllComments = {getAllComments}/></div>
         </div>
     </div>
      );

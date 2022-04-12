@@ -10,11 +10,9 @@ const CommentForm = (props) => {
     const handleSubmit = (event) => {
       event.preventDefault(); 
       props.postComment(comment);
-      props.getAllComments();
       setComment('');
-    
-
   }
+  
     return (  
     <div className="comm-form-contain">
       <form className="comm-form" onSubmit={handleSubmit}>
