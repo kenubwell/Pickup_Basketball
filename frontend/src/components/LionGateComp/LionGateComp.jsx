@@ -17,7 +17,7 @@ const LionGateComp = () => {
     useEffect(() => {
         getAllComments();
         getCourt();
-        postReply();
+        // postReply();
         deleteComment();
       }, [])
     
@@ -83,18 +83,17 @@ const LionGateComp = () => {
         getAllComments();
       }
 
-      async function postReply(reply){
-        console.log(reply)
-        let commentId = reply.comment_id
-        let response = await axios.post(`http://127.0.0.1:8000/comment/reply/${commentId}/`, reply, {
-          headers: {
-            Authorization: 'Bearer ' + token
-          }
-        });
-        getAllComments();
+      // async function postReply(reply){
+      //   console.log(reply)
+      //   let commentId = reply.comment_id
+      //   let response = await axios.post(`http://127.0.0.1:8000/comment/reply/${commentId}/`, reply, {
+      //     headers: {
+      //       Authorization: 'Bearer ' + token
+      //     }
+      //   });
+      //   getAllComments();
       
-      }
-
+      // }
     
     return ( 
         <div>
@@ -114,7 +113,7 @@ const LionGateComp = () => {
         </div>
         <div>
             <div><CommentForm postComment = {postComment}/></div>
-            <div><CommentList allComments = {allComments} deleteComment = {deleteComment} getAllComments = {getAllComments} postReply = {postReply}/></div>
+            <div><CommentList allComments = {allComments} deleteComment = {deleteComment} getAllComments = {getAllComments}/></div>
         </div>
     </div>
      );
