@@ -44,7 +44,7 @@ class CommentActions(APIView):
         return Response(serializers.data, status=status.HTTP_200_OK)
 
     def delete(self, request, pk, format=None):
-        comment = get_object_or_404(Comment, court_id=pk)
+        comment = get_object_or_404(Comment, pk=pk)
         comment.delete()
         return Response(status=status.HTTP_200_OK)
 

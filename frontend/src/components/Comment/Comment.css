@@ -1,0 +1,26 @@
+.two-button-contain{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: .8rem;
+    padding-bottom: .3rem;
+}
+
+.delete-button{
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: black;
+    border-radius: 10px;
+    padding: 1px 1px;
+    margin-right: .3rem;
+}
+
+.reply-button{
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: .7rem;
+    padding: 2px 5px;
+    border-radius: 10px;
+    background-color: orange;
+    border-color: orange;
+}

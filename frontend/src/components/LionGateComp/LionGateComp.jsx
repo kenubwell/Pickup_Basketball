@@ -69,6 +69,14 @@ const LionGateComp = () => {
           }
         });
       }
+
+      async function deleteComment(comment){
+        let response = await axios.delete(`http://127.0.0.1:8000/comment/${comment.id}/`, {
+          headers: {
+            Authorization: 'Bearer ' + token
+          }
+        });
+      }
     return ( 
         <div>
         <div>
@@ -87,7 +95,7 @@ const LionGateComp = () => {
         </div>
         <div>
             <div><CommentForm postComment = {postComment}/></div>
-            <div><CommentList allComments = {allComments}/></div>
+            <div><CommentList allComments = {allComments} deleteComment = {deleteComment} getAllComments = {getAllComments}/></div>
         </div>
     </div>
      );
