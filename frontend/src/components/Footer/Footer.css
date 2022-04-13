@@ -27,9 +27,18 @@ footer {
 .footer-list {
   list-style: none;
   display: inline-block;
-  padding: 0px 32px;
+  padding: 0px 11px;
 }
 
+.foot-bl{
+  padding-right: 5.5px;
+
+}
+
+.foot-lo{
+  padding-right: 31px;
+
+}
 
 .footer-color {
   color: white;
@@ -37,5 +46,5 @@ footer {
 }
 
 .footer-image{
-    height: 35px;
+    height: 33.6px;
 }
