@@ -26,4 +26,9 @@ margin-top: 4.5rem;
     font-weight: bold;
 }
 
+.down-arrow{
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
 

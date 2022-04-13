@@ -20,6 +20,7 @@ import WaterlooPage from "./pages/WaterlooPage/WaterlooPage";
 import LionGatePage from "./pages/LiongatePage/LionGatePage";
 import CedarParkPage from "./pages/CedarparkPage/CedarParkPage";
 import MeadowbrookPage from "./pages/MeadowbrookPage/MeadowbrookPage";
+import LocalGames from "./pages/LocalGames/LocalGames";
 
 function App() {
   return (
@@ -37,12 +38,13 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/default" element={<SplashPage />} />
-        <Route path="/courts" element={<CourtsPage />} />
-        <Route path="/videos" element={<VideoPage />} />
-        <Route path="/courts/waterloo" element={<WaterlooPage />} />
-        <Route path="/courts/liongate" element={<LionGatePage />} />
-        <Route path="/courts/cedarpark" element={<CedarParkPage />} />
-        <Route path="/courts/meadow" element={<MeadowbrookPage />} />
+        <Route path="/courts" element={<PrivateRoute><CourtsPage /></PrivateRoute>} />
+        <Route path="/videos" element={<PrivateRoute><VideoPage /></PrivateRoute>} />
+        <Route path="/courts/waterloo" element={<PrivateRoute><WaterlooPage /></PrivateRoute>} />
+        <Route path="/courts/liongate" element={<PrivateRoute><LionGatePage /></PrivateRoute>} />
+        <Route path="/courts/cedarpark" element={<PrivateRoute><CedarParkPage /></PrivateRoute>} />
+        <Route path="/courts/meadow" element={<PrivateRoute><MeadowbrookPage /></PrivateRoute>} />
+        <Route path="/localgames" element={<PrivateRoute><LocalGames /></PrivateRoute>} />
       </Routes>
       <Footer />
     </div>
