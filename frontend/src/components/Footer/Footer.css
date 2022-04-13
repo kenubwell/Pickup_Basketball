@@ -27,7 +27,7 @@ footer {
 .footer-list {
   list-style: none;
   display: inline-block;
-  padding: 0px 11px;
+  padding: 0px 8px;
 }
 
 .foot-bl{
@@ -36,7 +36,7 @@ footer {
 }
 
 .foot-lo{
-  padding-right: 31px;
+  padding-right: 33px;
 
 }
 

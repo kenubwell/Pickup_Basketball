@@ -30,7 +30,7 @@ const SplashBottom = () => {
                         site for bringing HoCo basketball enthusiasts together who still want to hoop. 
                     </div>
                     <div className='features-header'>
-                        Features:
+                        Features
                     </div>
                     <div className='features-list'>
                         <medium className = 'features-font'>- Schedule Courts</medium>

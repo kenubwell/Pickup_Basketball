@@ -28,7 +28,7 @@ const LoginPage = () => {
           </div>
           <div>
             <label className="login-label">Password:{" "}</label>
-              <input type="text" name="password" value={formData.password} onChange={handleInputChange}/>
+              <input type="password" name="password" value={formData.password} onChange={handleInputChange}/>
             {isServerError ? (
               <p className="error">Login failed, incorrect credentials!</p>
             ) : null}

@@ -95,15 +95,16 @@
   }
   
   .reg-button {
-    background-color: orange;
-    color: black;
+    background-color: black;
+    color: orange;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 14px;
     border-color: black;
     border-radius: 10px;
     padding: .5rem .5rem;
+    box-shadow: 4px 2px 5px orange;
   }
 
   .reg-button:hover{
-      background-color: darkgoldenrod;
+      background-color: darkorange;
   }

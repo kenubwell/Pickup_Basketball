@@ -8,6 +8,34 @@
      display: grid;
      grid-template-columns: 1fr 1fr;
      column-gap: 7rem;
-     row-gap: 6rem;
+     row-gap: 5rem;
      margin-left: 20rem;
+ }
+
+ .hoco-lions-contain{
+     margin-top: .4rem;
+ }
+ .hoco-lions-text{
+     font-weight: bold;
+     text-align: center;
+     font-size: 17.5px;
+ }
+
+ .hoco-cc-drag-contain{
+     margin-top: .4rem;
+ }
+ .hoco-cc-drag-text{
+     font-weight: bold;
+     text-align: center;
+     font-size: 17.5px;
+ }
+
+ .hoco-eagles-contain{
+    margin-top: .4rem;
+ }
+
+ .hoco-eagles-text{
+    font-weight: bold;
+    text-align: center;
+    font-size: 17.5px;
  }

@@ -21,9 +21,14 @@
   padding: 0.4rem .7rem;
   font-weight: bold;
   color: orange;
-  border-color: orange;
-  font-size: 14px;
-  margin-right: .4rem;
+  border-color: black;
+  box-shadow: 4px 2px 5px orange;
+  font-size: 15px;
+  margin-right: .5rem;
+}
+
+.login-button:hover{
+  background-color: darkorange;
 }
 
 .header-logo{

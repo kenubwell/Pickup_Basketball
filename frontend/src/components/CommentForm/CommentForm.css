@@ -30,17 +30,24 @@
     width: 375px;
     padding-left: 0.5rem;
     margin-right: 1rem;
+    height: 25px;
   }
   
   .comm-button {
-    background-color: orange;
-    color: black;
+    background-color: black;
+    color: orange;
     font-weight: bold;
     border-radius: 10px;
     padding: 3px 8px;
     margin-left: 0.8rem;
-    font-size: 12px;
-    border-color: orange;
+    font-size: 12.4px;
+    border-color: black;
+    box-shadow: 4px 2px 5px orange;
+    margin-top: .1rem;
+  }
+
+  .comm-button:hover{
+    background-color: darkorange;
   }
   
   .comm-but-contain {
@@ -48,6 +55,6 @@
     justify-content: flex-end;
     padding-right: 1rem;
     padding-top: 0.3rem;
-    padding-bottom: 0.1rem;
+    padding-bottom: 0.3rem;
   }
   
