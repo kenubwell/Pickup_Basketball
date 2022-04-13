@@ -5,12 +5,12 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.decorators import permission_classes
 from rest_framework.views import APIView
-from .models import Comment, Reply, Payment, Court
-from .serializers import CommentSerializer, ReplySerializer, PaymentSerializer, CourtSerializer
+from .models import Comment, Reply, Payment, Court, CCGames, HSGames
+from .serializers import CommentSerializer, ReplySerializer, PaymentSerializer, CourtSerializer, HSGamesSerializer, CCGamesSerializer
 
 
 
-@permission_classes([AllowAny])
+@permission_classes([IsAuthenticated])
 class CourtsActions(APIView):
 
     def get(self, request, format=None):
@@ -28,15 +28,6 @@ class CourtsActions(APIView):
 
 @permission_classes([IsAuthenticated])
 class CommentActions(APIView):
-
-    # def post(self, request, pk):
-    #     court_id = pk
-    #     temp_data = request.data
-    #     temp_data['court_id'] = court_id
-    #     serializers = CommentSerializer(data=temp_data)
-    #     serializers.is_valid(raise_exception=True)
-    #     serializers.save(user=request.user)
-    #     return Response(serializers.data, status=status.HTTP_201_CREATED)
 
     def get(self, request, pk):
         court_comments = Comment.objects.filter(court_id = pk)
@@ -100,3 +91,20 @@ class PaymentPost(APIView):
         serializers.save(user=request.user)
         return Response(serializers.data, status=status.HTTP_201_CREATED)
 
+
+@permission_classes([IsAuthenticated])
+class HighSchoolGames(APIView):
+
+    def get(self, request, format=None):
+        hsgames = HSGames.objects.all()
+        serializers = HSGamesSerializer(hsgames, many=True)
+        return Response(serializers.data, status=status.HTTP_200_OK)
+
+
+@permission_classes([IsAuthenticated])
+class CollegeGames(APIView):
+
+    def get(self, request, format=None):
+        ccgames = CCGames.objects.all()
+        serializers = CCGamesSerializer(ccgames, many=True)
+        return Response(serializers.data, status=status.HTTP_200_OK)

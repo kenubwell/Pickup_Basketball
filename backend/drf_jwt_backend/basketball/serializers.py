@@ -1,6 +1,6 @@
 from dataclasses import field
 from rest_framework import serializers
-from .models import Comment, Reply, Court, Payment
+from .models import Comment, Reply, Court, Payment, HSGames, CCGames
 from django.contrib.auth.models import User
 
 
@@ -39,3 +39,14 @@ class ReplySerializer(serializers.ModelSerializer):
     comment_id = serializers.IntegerField(write_only = True)
 
    
+class HSGamesSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = HSGames
+        fields = ['id', 'date', 'game', 'location', 'link']
+        depth = 1
+
+class CCGamesSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CCGames
+        fields = ['id', 'date', 'game', 'location', 'link']
+        depth = 1

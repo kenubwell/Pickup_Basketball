@@ -27,3 +27,15 @@ class Payment(models.Model):
     expdate = models.DateField('%m/%y')
     cvcnumber = models.IntegerField()
 
+class HSGames(models.Model):
+    date = models.CharField(max_length=50)
+    game = models.CharField(max_length=255)
+    location = models.CharField(max_length=100)
+    link = models.URLField(max_length=255)
+
+class CCGames(models.Model):
+    date = models.CharField(max_length=50)
+    game = models.CharField(max_length=255)
+    location = models.CharField(max_length=100)
+    link = models.URLField(max_length=255)
+
