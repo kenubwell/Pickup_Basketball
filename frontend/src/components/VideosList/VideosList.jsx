@@ -7,7 +7,7 @@ const VideosList = () => {
             <div className="vid-title-contain-trans"><h3 className="videos-title">HoCo Videos</h3></div>
             <div className="videolist-contr">
                 <div>
-                    <iframe id="ytplayer" type="text/html" width="450" height="310"
+                    <iframe id="ytplayer" type="text/html" width="440" height="300"
                         src="https://www.youtube.com/embed/6EiGqX2lwi8"
                         frameborder="0">
                     </iframe>
@@ -16,7 +16,7 @@ const VideosList = () => {
                     </div>
                 </div>
                 <div>
-                    <iframe id="ytplayer" type="text/html" width="450" height="310"
+                    <iframe id="ytplayer" type="text/html" width="440" height="300"
                         src="https://www.youtube.com/embed/NWeDPxKqm_4"
                         frameborder="0">
                     </iframe>
@@ -25,7 +25,7 @@ const VideosList = () => {
                     </div>
                 </div>
                 <div>
-                    <iframe id="ytplayer" type="text/html" width="450" height="310"
+                    <iframe id="ytplayer" type="text/html" width="440" height="300"
                         src="https://www.youtube.com/embed/GSobLrGiwbU"
                         frameborder="0">
                     </iframe>
@@ -34,7 +34,7 @@ const VideosList = () => {
                     </div>
                 </div>
                 <div>
-                    <iframe id="ytplayer" type="text/html" width="450" height="310"
+                    <iframe id="ytplayer" type="text/html" width="440" height="300"
                         src="https://www.youtube.com/embed/KF6_wJlyj8o"
                         frameborder="0">
                     </iframe>

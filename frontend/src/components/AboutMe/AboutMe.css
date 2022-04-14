@@ -5,7 +5,7 @@
 .about-me-contain{
     display: flex;
     margin-left: 25.5rem;
-    margin-top: 9.2rem;
+    margin-top: 9rem;
    
     width: 790px;
 }
@@ -61,11 +61,11 @@
  .bbullets-contain{
      margin-top: 2rem;
      display: flex;
-     margin-left: 41rem;
+     margin-left: 39.5rem;
  }
 
  .right-side-bblist{
-     margin-left: 3rem;
+     margin-left: 3.4rem;
  }
 
  .credly-image{

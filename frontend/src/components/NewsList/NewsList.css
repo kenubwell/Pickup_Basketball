@@ -1,4 +1,4 @@
-.games-title{
+.news-title{
     color: white;
     margin: 0;
     position: fixed;
@@ -7,8 +7,4 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 10;
- }
-
- .cc-hs-both-contain{
-     margin-top: 9rem;
  }

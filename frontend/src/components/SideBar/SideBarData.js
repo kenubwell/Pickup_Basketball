@@ -4,6 +4,7 @@ import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 import * as GiIcons from 'react-icons/gi';
 import * as IoIcons5 from 'react-icons/io5';
+import * as BsIcons from 'react-icons/bs';
 
 export const SideBarData = [
     {
@@ -19,7 +20,7 @@ export const SideBarData = [
       {
         title: 'Calendar',
         path: '/',
-        icon: <IoIcons.IoIosPaper  />,
+        icon: <BsIcons.BsCalendarDay />,
       },
       {
         title: 'HoCo Videos',
@@ -27,9 +28,14 @@ export const SideBarData = [
         icon: <FaIcons.FaVideoSlash />,
       },
       {
-        title: 'Local Games',
+        title: 'HoCo Games',
         path: '/localgames',
         icon: <IoIcons5.IoPeopleSharp />,
+      },
+      {
+        title: 'Local News',
+        path: '/localnews',
+        icon: <BsIcons.BsNewspaper />,
       },
       {
         title: 'About Me',
