@@ -1,7 +1,10 @@
-import React from "react";
+import { useState } from "react";
 import './HighSchoolGames.css';
 
 const HighSchoolGames = (props) => {
+
+    const [searchTerm, setSearchTerm] = useState('');
+
     return ( 
     <div className = 'highschool-container'>
         <div className="hs-big-img-contain">
@@ -10,7 +13,13 @@ const HighSchoolGames = (props) => {
         <div className="hs-table-container">
             <div className='table-title'>
                 <div className ='highschool-title-contain'>
-                    <div className='highschool-title'>Howard High School Lions</div>
+                    <div className='highschool-title'>
+                        Howard High School Lions
+                    </div>
+                    <div>
+                        <label className='search-label'>Filter Games:</label>
+                        <input type='text' className='custom-input' placeholder="Search..." onChange={(event) => setSearchTerm(event.target.value)}/>
+                    </div> 
                 </div>
             </div>
         <table className='hs-game-table table'>
@@ -23,7 +32,15 @@ const HighSchoolGames = (props) => {
             </tr>
         </thead>
         <tbody>
-            {props.hsgames.map((games, index) => { 
+            {props.hsgames.filter((games) =>{
+                if (searchTerm == ''){
+                    return games;
+                }
+                else if (games.date.toLowerCase().includes(searchTerm.toLocaleLowerCase()) || games.game.toLowerCase().includes(searchTerm.toLocaleLowerCase()) || games.location.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
+                return games;
+                }
+            })
+            .map((games, index) => { 
             return (
                 <tr key= {index} className = 'hs-display-rows'>
                     <td>{games.date}</td>

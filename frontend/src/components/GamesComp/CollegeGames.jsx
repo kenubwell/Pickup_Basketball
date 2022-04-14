@@ -1,7 +1,11 @@
+import { useState } from "react";
 import React from "react";
 import './CollegeGames.css';
 
 const CollegeGames = (props) => {
+
+    const [searchTerm, setSearchTerm] = useState('');
+
     return ( 
     <div className = 'college-container'>
         <div className="cc-big-img-contain">
@@ -10,7 +14,13 @@ const CollegeGames = (props) => {
         <div className="cc-table-container">
             <div className='table-title'>
                 <div className ='college-title-contain'>
-                    <div className='college-title'>Howard Community College Dragons</div>
+                    <div className='college-title'>
+                        Howard Community College Dragons
+                    </div>
+                    <div>
+                        <label className='search-label'>Filter Games:</label>
+                        <input type='text' className='custom-input' placeholder="Search..." onChange={(event) => setSearchTerm(event.target.value)}/>
+                    </div> 
                 </div>
             </div>
             <table className='cc-game-table table'>
@@ -23,7 +33,15 @@ const CollegeGames = (props) => {
                 </tr>
             </thead>
         <tbody>
-            {props.ccgames.map((games, index) => { 
+            {props.ccgames.filter((games) =>{
+                if (searchTerm == ''){
+                    return games;
+                }
+                else if (games.date.toLowerCase().includes(searchTerm.toLocaleLowerCase()) || games.game.toLowerCase().includes(searchTerm.toLocaleLowerCase()) || games.location.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
+                return games;
+                }
+            })
+            .map((games, index) => { 
             return (
                 <tr key= {index} className = 'cc-display-rows'>
                     <td>{games.date}</td>

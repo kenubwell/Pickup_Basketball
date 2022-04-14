@@ -14,6 +14,14 @@
 .highschool-title{
     font-weight: bold;
     font-size: 23px;
+    margin-right: auto;
+}
+
+.highschool-title-contain{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: .2rem;
 }
 
 .hs-big-img-contain{

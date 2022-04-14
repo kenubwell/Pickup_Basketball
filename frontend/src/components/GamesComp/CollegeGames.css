@@ -14,6 +14,7 @@
 .college-title{
     font-weight: bold;
     font-size: 23px;
+    margin-right: auto;
 }
 
 .cc-big-img-contain{
@@ -31,4 +32,23 @@
     color: white;
     font-weight: bold;
     font-size: 16.5px;
+}
+
+.college-title-contain{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: .2rem;
+}
+
+.search-label{
+    padding-right: .3rem;
+    font-weight: bold;
+}
+
+.custom-input{
+    border-radius: 10px;
+    padding-left: 5px;
+    height: 24px;
+    margin-top: .3rem;
 }
