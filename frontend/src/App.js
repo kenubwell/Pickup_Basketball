@@ -21,6 +21,7 @@ import LionGatePage from "./pages/LiongatePage/LionGatePage";
 import CedarParkPage from "./pages/CedarparkPage/CedarParkPage";
 import MeadowbrookPage from "./pages/MeadowbrookPage/MeadowbrookPage";
 import LocalGames from "./pages/LocalGames/LocalGames";
+import About from "./pages/About/About";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
         <Route path="/courts/cedarpark" element={<PrivateRoute><CedarParkPage /></PrivateRoute>} />
         <Route path="/courts/meadow" element={<PrivateRoute><MeadowbrookPage /></PrivateRoute>} />
         <Route path="/localgames" element={<PrivateRoute><LocalGames /></PrivateRoute>} />
+        <Route path="/about" element={<PrivateRoute><About /></PrivateRoute>} />
       </Routes>
       <Footer />
     </div>

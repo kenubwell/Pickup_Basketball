@@ -1,0 +1,89 @@
+.entire-contain-ab{
+    margin-bottom: 13rem;
+}
+
+.about-me-contain{
+    display: flex;
+    margin-left: 25.5rem;
+    margin-top: 9.2rem;
+   
+    width: 790px;
+}
+
+.about-title{
+    color: white;
+    margin: 0;
+    position: fixed;
+    top: 4.4%;
+    left: 53.5%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+ }
+
+ .about-me-pic{
+     height: 261px;
+     border-radius: 125px;
+     border-style: solid;
+     box-shadow: 4px 2px 5px orange;
+ }
+
+ .about-first-para{
+     padding-top: .6rem;
+     margin-left: 1.7rem;
+     font-size: 18.3px;
+
+ }
+
+ .about-second-para{
+     width: 790px;
+     margin-left: 26.6rem;
+     font-size: 18.3px;
+     margin-top: .1rem;
+ }
+
+ .list-shade{
+     font-weight: bold;
+     box-shadow: 4px 2px 5px orange;
+     width: 135px;
+     border-radius: 10px;
+     margin-bottom: .5rem;
+ }
+
+ .list-shade-lg{
+     font-weight: bold;
+     box-shadow: 4px 2px 5px orange;
+     width: 154.5px;
+     border-radius: 10px;
+     margin-bottom: .5rem;
+ }
+
+ .bbullets-contain{
+     margin-top: 2rem;
+     display: flex;
+     margin-left: 41rem;
+ }
+
+ .right-side-bblist{
+     margin-left: 3rem;
+ }
+
+ .credly-image{
+     height: 26px;
+     box-shadow: none;
+     border-radius: none;
+ }
+
+.small-icon-imgs{
+    display: flex;
+    align-items: center;
+    padding-top: .1rem;
+}
+
+.github{
+    margin-left: 5rem;
+}
+
+.credly-contain{
+    margin-left: 2rem;
+}
