@@ -48,7 +48,7 @@ margin-bottom: 2rem;
 }
 
 .features-font{
-    font-size: 13.9px;
+    font-size: 14px;
     padding-bottom: 1.5px;
 }
 
@@ -80,6 +80,7 @@ margin-bottom: 2rem;
     border-color: orange;
     font-size: 13.5px;
     margin-right: .4rem;
+    box-shadow: 4px 2px 5px black;
   }
 
   .up-arrow-contain{

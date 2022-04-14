@@ -83,10 +83,10 @@ const CedarParkComp = () => {
       }
 
     return ( 
-        <div>
-        <div>
-            <div><h3 className="cedar-title">Cedar Park Courts</h3></div>
-        </div>
+        <div className="entire-contain">
+          <div>
+              <div><h3 className="cedar-title">Cedar Park Courts</h3></div>
+          </div>
         <div className="cedar-contain">
             <div className="cedar-image-contain">
                 <img src ="/images/cedarparkcourt.jpg" className = "cedar-image" alt = "cp court"/>

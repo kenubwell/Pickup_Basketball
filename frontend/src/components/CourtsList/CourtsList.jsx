@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const CourtsList = () => {
     return ( 
-        <div>
+        <div className="entire-contain">
             <div className="courts-title"><h3>Courts</h3></div>
             <div className="courtlist-contr">
                 <div className="container-hov">

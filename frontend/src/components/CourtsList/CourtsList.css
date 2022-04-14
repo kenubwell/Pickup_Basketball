@@ -62,11 +62,12 @@
 
   .middle-text {
     background-color:black;
-    color: white;
+    color: orange;
     font-weight: bold;
     font-size: 17px;
     padding: 5px 10px;
     border-radius: 10px;
     border-style: solid;
     border-color: black;
+    box-shadow: 4px 2px 5px orange;
   }

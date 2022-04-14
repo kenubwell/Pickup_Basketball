@@ -84,7 +84,7 @@ const MeadowComp = () => {
       }
       
     return ( 
-        <div>
+        <div className="entire-contain">
             <div>
                 <div><h3 className="meadow-title">Meadowbrook Athletic Complex</h3></div>
             </div>

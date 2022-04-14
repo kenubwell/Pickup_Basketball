@@ -148,7 +148,7 @@ class Calendar extends React.Component {
   
     render() {
       return (
-        <div>
+        <div className='entire-contain'>
           <div>
                 <h3 className="schedule-title">Your Schedule</h3>
           </div>

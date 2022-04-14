@@ -1,5 +1,6 @@
 .sidebar-bg{
-    height: 135vh;
+    /* height: 135vh; */
+    height: 100%;
     width: 228px;
     background-color: black;
     box-shadow: 4px 2px 5px black;

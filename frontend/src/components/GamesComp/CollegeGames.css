@@ -22,4 +22,13 @@
 
 .cc-table-container{
     margin-left: 6rem;
+    width: 1000px;
+}
+
+
+.cc-header-row{
+    background-color: indianred;
+    color: white;
+    font-weight: bold;
+    font-size: 16.5px;
 }

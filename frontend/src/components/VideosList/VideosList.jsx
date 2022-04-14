@@ -3,7 +3,7 @@ import './VideosList.css';
 
 const VideosList = () => {
     return ( 
-        <div>
+        <div className="entire-contain">
             <div className="vid-title-contain-trans"><h3 className="videos-title">HoCo Videos</h3></div>
             <div className="videolist-contr">
                 <div>

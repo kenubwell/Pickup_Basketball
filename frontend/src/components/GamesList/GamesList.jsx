@@ -37,7 +37,7 @@ const GameList = () => {
 
 
     return ( 
-        <div>
+        <div className="entire-contain">
             <div className="games-title"><h3 className="">Local Games</h3></div>
             <div className="cc-hs-both-contain">
                 <div><CollegeGames ccgames = {ccgames}/></div>

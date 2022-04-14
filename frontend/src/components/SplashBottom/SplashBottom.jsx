@@ -34,9 +34,9 @@ const SplashBottom = () => {
                     </div>
                     <div className='features-list'>
                         <medium className = 'features-font'>- Schedule Courts</medium>
-                        <medium className = 'features-font'>- Reserve Athletic Complex gym</medium>
-                        <medium className = 'features-font'>- Share comments about the courts</medium>
-                        <medium className = 'features-font'>- Watch Local basketball videos</medium>
+                        <medium className = 'features-font'>- Reserve Athletic Complex Gym</medium>
+                        <medium className = 'features-font'>- Share Comments about the Courts</medium>
+                        <medium className = 'features-font'>- Watch Local Basketball Videos</medium>
                         <medium className = 'features-font'>- View Local Games Listings</medium>
                     </div>
                 </div>

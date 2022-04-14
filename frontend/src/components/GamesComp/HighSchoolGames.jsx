@@ -10,7 +10,7 @@ const HighSchoolGames = (props) => {
         <div className="hs-table-container">
             <div className='table-title'>
                 <div className ='highschool-title-contain'>
-                    <p className='highschool-title'>Howard High School Lions</p>
+                    <div className='highschool-title'>Howard High School Lions</div>
                 </div>
             </div>
         <table className='hs-game-table table'>

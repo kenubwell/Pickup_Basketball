@@ -83,7 +83,7 @@ const WaterlooComp = () => {
       }
       
     return ( 
-        <div>
+        <div className="entire-contain">
             <div>
                 <div><h3 className="water-title">Waterloo Park Court</h3></div>
             </div>

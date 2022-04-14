@@ -7,12 +7,11 @@ import GameList from "../../components/GamesList/GamesList";
 
 
 const LocalGames = () => {
-    return ( 
+    return (         
         <div className="courts-container">
             <div><SideBar/></div>
             <div><GameList/></div>
         </div>
-        
      );
 }
  
