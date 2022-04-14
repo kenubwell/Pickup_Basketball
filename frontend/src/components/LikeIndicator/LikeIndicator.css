@@ -1,5 +1,5 @@
 .likes-overall-contain{
-    margin-top: 1.5rem;
+    margin-top: 3rem;
     background-color: gainsboro;
     width: 380px;
     margin-left: 3.5rem;
@@ -8,6 +8,7 @@
     padding-bottom: 3px;
     border-style:solid;
     border-color: orange;
+    margin-left: 38rem;
 }
 
 .like-or-dis-text{

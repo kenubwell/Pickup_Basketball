@@ -90,13 +90,14 @@ const CedarParkComp = () => {
         <div className="cedar-contain">
             <div className="cedar-image-contain">
                 <img src ="/images/cedarparkcourt.jpg" className = "cedar-image" alt = "cp court"/>
-                <div>
-                    <div><LikeIndicator postLike = {postLike} postDisLike = {postDisLike} court = {court} getCourt = {getCourt}/></div>
-                </div>
             </div>
             <div className="cedar-map-contain">
                 <CedarParkMap/>
             </div>
+        </div>
+        <div>
+        <div>
+            <LikeIndicator postLike = {postLike} postDisLike = {postDisLike} court = {court} getCourt = {getCourt}/></div>
         </div>
         <div>
             <div><CommentForm postComment = {postComment}/></div>

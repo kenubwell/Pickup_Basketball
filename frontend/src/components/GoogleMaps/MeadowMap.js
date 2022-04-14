@@ -1,5 +1,6 @@
 import React from "react";
 import {InfoWindow, withScriptjs, withGoogleMap, GoogleMap, Marker} from "react-google-maps";
+import "./GoogleMaps.css";
 
 class MeadowMap extends React.Component {
 
@@ -14,7 +15,7 @@ class MeadowMap extends React.Component {
                 position={{ lat: 39.24944, lng: -76.82333 }}
               >
                 <InfoWindow>
-                  <div>5001 Meadowbrook Ln, Ellicott City, MD 21043</div>
+                  <div className='google-title'>5001 Meadowbrook Ln, Ellicott City, MD 21043</div>
                 </InfoWindow>
                 </Marker>
             </GoogleMap>
@@ -24,7 +25,7 @@ class MeadowMap extends React.Component {
         <MapWithAMarker
         googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4R6AN7SmujjPUIGKdyao2Kqitzr1kiRg&v=3.exp&libraries=geometry,drawing,places"
         loadingElement={<div style={{ height: `100%` }} />}
-        containerElement={<div style={{ height: `320px` }} />}
+        containerElement={<div style={{ height: `300px` }} />}
         mapElement={<div style={{ height: `100%` }} />}
 />
         )

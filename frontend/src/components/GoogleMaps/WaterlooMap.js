@@ -14,7 +14,7 @@ class WaterlooMap extends React.Component {
                 position={{ lat: 39.18347, lng: -76.78585 }}
               >
                 <InfoWindow>
-                  <div>6951 Old Waterloo Rd, Elkridge, MD 21075</div>
+                  <div className="google-title">6951 Old Waterloo Rd, Elkridge, MD 21075</div>
                 </InfoWindow>
                 </Marker>
             </GoogleMap>
@@ -24,7 +24,7 @@ class WaterlooMap extends React.Component {
         <MapWithAMarker
         googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4R6AN7SmujjPUIGKdyao2Kqitzr1kiRg&v=3.exp&libraries=geometry,drawing,places"
         loadingElement={<div style={{ height: `100%` }} />}
-        containerElement={<div style={{ height: `320px` }} />}
+        containerElement={<div style={{ height: `300px` }} />}
         mapElement={<div style={{ height: `100%` }} />}
 />
         )

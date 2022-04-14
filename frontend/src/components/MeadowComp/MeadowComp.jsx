@@ -95,13 +95,13 @@ const MeadowComp = () => {
                         <div className="notice-fee"><medium className='notice-text'><b>Note: </b>Small fee of $5.00 to reserve.</medium></div>
                         <div><Payment/></div>
                     </div>
-                    <div>
-                        <div><LikeIndicator postLike = {postLike} postDisLike = {postDisLike} court = {court} getCourt = {getCourt}/></div>
-                    </div>
                 </div>
                 <div className="meadow-map-contain">
                     <MeadowMap/>
                 </div>
+            </div>
+            <div>
+                <div><LikeIndicator postLike = {postLike} postDisLike = {postDisLike} court = {court} getCourt = {getCourt}/></div>
             </div>
             <div>
                 <div><CommentForm postComment = {postComment}/></div>

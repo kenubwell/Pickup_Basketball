@@ -90,13 +90,13 @@ const LionGateComp = () => {
         <div className="liongate-contain">
             <div className="lion-image-contain">
                 <img src ="/images/lionsgatecourt.jpg" className = "lion-image" alt = "lg court"/>
-                <div>
-                    <div><LikeIndicator postLike = {postLike} postDisLike = {postDisLike} court = {court} getCourt = {getCourt}/></div>
-                </div>
             </div>
             <div className="lion-map-contain">
                 <LionGateMap/>
             </div>
+        </div>
+        <div>
+            <div><LikeIndicator postLike = {postLike} postDisLike = {postDisLike} court = {court} getCourt = {getCourt}/></div>
         </div>
         <div>
             <div><CommentForm postComment = {postComment}/></div>

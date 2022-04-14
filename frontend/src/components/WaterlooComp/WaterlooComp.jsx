@@ -90,13 +90,13 @@ const WaterlooComp = () => {
             <div className="waterloo-contain">
                 <div className="water-image-contain">
                     <img src ="/images/waterloocourt.jpg" className = "water-image" alt = "wl court"/>
-                    <div>
-                        <div><LikeIndicator postLike = {postLike} postDisLike = {postDisLike} court = {court} getCourt = {getCourt}/></div>
-                    </div>
                 </div>
                 <div className="water-map-contain">
                     <WaterlooMap/>
                 </div>
+            </div>
+            <div>
+                <div><LikeIndicator postLike = {postLike} postDisLike = {postDisLike} court = {court} getCourt = {getCourt}/></div>
             </div>
             <div>
                 <div><CommentForm postComment = {postComment}/></div>

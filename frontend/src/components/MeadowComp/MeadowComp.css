@@ -23,7 +23,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* background-color: red; */
-    column-gap: 7.5rem;
+    column-gap: 7.3rem;
     margin-top: 7.5rem;
 }
 
@@ -34,8 +34,8 @@
 }
 
  .meadow-map-contain{
-     max-width: 630px;
-     margin-top: 1.5rem;
+     max-width: 550px;
+     margin-top: 2rem;
  }
 
  .notice-pay-contain{
