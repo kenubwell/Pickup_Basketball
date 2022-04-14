@@ -85,7 +85,7 @@ const CedarParkComp = () => {
     return ( 
         <div>
         <div>
-            <p><h2 className="cedar-title">Cedar Park Basketball Courts</h2></p>
+            <div><h3 className="cedar-title">Cedar Park Courts</h3></div>
         </div>
         <div className="cedar-contain">
             <div className="cedar-image-contain">

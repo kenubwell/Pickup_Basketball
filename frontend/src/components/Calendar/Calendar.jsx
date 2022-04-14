@@ -150,7 +150,7 @@ class Calendar extends React.Component {
       return (
         <div>
           <div>
-                <h2 className="schedule-title">Your Schedule</h2>
+                <h3 className="schedule-title">Your Schedule</h3>
           </div>
           <div className="fullcalen-contain">
             <div className='event-contain' id ="external-events">

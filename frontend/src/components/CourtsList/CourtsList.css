@@ -1,15 +1,21 @@
 .courts-title{
-    margin-left: 49.5rem;
-    margin-top: 6.5rem;
-    margin-bottom: 4rem;
+    color: white;
+    margin: 0;
+    position: fixed;
+    top: 4.4%;
+    left: 53.5%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
  }
 
  .courtlist-contr{
      display: grid;
      grid-template-columns: 1fr 1fr;
-     column-gap: 7rem;
-     row-gap: 6rem;
-     margin-left: 18rem;
+     column-gap: 8rem;
+     row-gap: 5rem;
+     margin-left: 15rem;
+     margin-top: 9.2rem;
  }
 
  .court-image{

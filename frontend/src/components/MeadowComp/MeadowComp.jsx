@@ -86,7 +86,7 @@ const MeadowComp = () => {
     return ( 
         <div>
             <div>
-                <p><h2 className="meadow-title">Meadowbrook Athletic Complex</h2></p>
+                <div><h3 className="meadow-title">Meadowbrook Athletic Complex</h3></div>
             </div>
             <div className="meadow-contain">
                 <div className="meadow-image-contain">

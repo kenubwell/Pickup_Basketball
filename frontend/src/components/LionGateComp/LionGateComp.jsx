@@ -85,7 +85,7 @@ const LionGateComp = () => {
     return ( 
         <div>
         <div>
-            <p><h2 className="lion-title">Lions Gate Basketball Court</h2></p>
+            <div><h3 className="lion-title">Lions Gate Court</h3></div>
         </div>
         <div className="liongate-contain">
             <div className="lion-image-contain">

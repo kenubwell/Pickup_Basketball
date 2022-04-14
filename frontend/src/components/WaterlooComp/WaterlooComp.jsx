@@ -85,7 +85,7 @@ const WaterlooComp = () => {
     return ( 
         <div>
             <div>
-                <p><h2 className="water-title">Waterloo Park Basketball Court</h2></p>
+                <div><h3 className="water-title">Waterloo Park Court</h3></div>
             </div>
             <div className="waterloo-contain">
                 <div className="water-image-contain">

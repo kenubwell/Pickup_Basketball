@@ -1,15 +1,21 @@
 .videos-title{
-    margin-left: 45.5rem;
-    margin-top: 6.5rem;
-    margin-bottom: 4rem;
+    color: white;
+    margin: 0;
+    position: fixed;
+    top: 4.2%;
+    left: 53.5%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
  }
 
  .videolist-contr{
      display: grid;
      grid-template-columns: 1fr 1fr;
      column-gap: 7rem;
-     row-gap: 5rem;
-     margin-left: 20rem;
+     row-gap: 4rem;
+     margin-left: 18rem;
+     margin-top: 9.2rem;
  }
 
  .hoco-lions-contain{

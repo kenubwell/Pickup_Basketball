@@ -4,7 +4,7 @@ import './VideosList.css';
 const VideosList = () => {
     return ( 
         <div>
-            <div><h2 className="videos-title">HoCo Videos</h2></div>
+            <div className="vid-title-contain-trans"><h3 className="videos-title">HoCo Videos</h3></div>
             <div className="videolist-contr">
                 <div>
                     <iframe id="ytplayer" type="text/html" width="450" height="310"

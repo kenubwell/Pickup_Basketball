@@ -5,7 +5,7 @@ const CollegeGames = (props) => {
     return ( 
     <div className = 'college-container'>
         <div className="cc-big-img-contain">
-        <img src ="/images/hcc_logo.jpg" className = "hcc-dragon-logo" alt = "hcc dragon"/>
+            <img src ="/images/hcc_logo.jpg" className = "hcc-dragon-logo" alt = "hcc dragon"/>
         </div>
         <div className="cc-table-container">
             <div className='table-title'>
