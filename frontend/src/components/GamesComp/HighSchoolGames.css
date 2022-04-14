@@ -1,0 +1,24 @@
+.highschool-container{
+    display: flex;
+}
+
+.hs-lion-img{
+    height: 45px;
+}
+
+.hs-lions-logo{
+    height: 175px;
+}
+
+.highschool-title{
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.hs-big-img-contain{
+    margin-left: 8.9rem;
+}
+
+.hs-table-container{
+    margin-left: 5.2rem;
+}

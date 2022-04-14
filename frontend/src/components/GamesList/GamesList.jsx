@@ -1,12 +1,47 @@
-import react from "react";
+import React, { useState, useEffect } from "react";
 import './GamesList.css';
+import axios from "axios";
+import useAuth from "../../hooks/useAuth";
+import CollegeGames from "../GamesComp/CollegeGames";
+import HighSchoolGames from "../GamesComp/HighSchoolGames";
 
 const GameList = () => {
+
+    const [hsgames, setHSGames] = useState([]);
+    const [ccgames, setCCGames] = useState([]);
+    const [user, token] = useAuth();
+
+    useEffect(() => { 
+        getAllCCGames();
+        getAllHSGames();
+      }, [])
+
+
+    async function getAllHSGames(){
+        let response = await axios.get('http://127.0.0.1:8000/hsgames/', {
+            headers: {
+            Authorization: 'Bearer ' + token
+            }
+        });
+        setHSGames(response.data);
+      }
+
+    async function getAllCCGames(){
+        let response = await axios.get('http://127.0.0.1:8000/ccgames/', {
+            headers: {
+            Authorization: 'Bearer ' + token
+            }
+        });
+        setCCGames(response.data);
+      }
+
+
     return ( 
         <div>
             <div className="games-title"><h2 className="">Local Games</h2></div>
             <div>
-                <div></div>
+                <div><CollegeGames ccgames = {ccgames}/></div>
+                <div><HighSchoolGames hsgames = {hsgames}/></div>
             </div>
         </div>
      );

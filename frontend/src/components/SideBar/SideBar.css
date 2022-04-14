@@ -1,5 +1,5 @@
 .sidebar-bg{
-    height: 125vh;
+    height: 135vh;
     width: 228px;
     background-color: black;
     box-shadow: 4px 2px 5px black;
@@ -29,6 +29,7 @@
 
   .sav-text a:hover {
     background-color: orange;
+    color:black;
   }
   
   span {

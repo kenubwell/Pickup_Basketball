@@ -1,0 +1,25 @@
+.college-container{
+    display: flex;
+
+}
+
+.hcc-dragon-img{
+    height: 45px;
+}
+
+.hcc-dragon-logo{
+    height: 200px;
+}
+
+.college-title{
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.cc-big-img-contain{
+    margin-left: 9rem;
+}
+
+.cc-table-container{
+    margin-left: 6rem;
+}
