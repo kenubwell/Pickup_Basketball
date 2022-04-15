@@ -7,7 +7,7 @@ class CedarParkMap extends React.Component {
 
         const MapWithAMarker = withScriptjs(withGoogleMap(props =>
             <GoogleMap
-              defaultZoom={12}
+              zoom={12}
               defaultCenter={{ lat: 39.23381, lng: -76.88165 }}
             >
               <Marker
@@ -25,8 +25,9 @@ class CedarParkMap extends React.Component {
         googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4R6AN7SmujjPUIGKdyao2Kqitzr1kiRg&v=3.exp&libraries=geometry,drawing,places"
         loadingElement={<div style={{ height: `100%` }} />}
         containerElement={<div style={{ height: `300px` }} />}
-        mapElement={<div style={{ height: `100%` }} />}
-/>
+        mapElement={<div style={{ height: `100%`, borderRadius: `20px`, boxShadow:  '4px 2px 5px black' }} />}
+        />
+
         )
     }
     

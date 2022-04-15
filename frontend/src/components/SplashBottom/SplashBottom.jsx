@@ -14,7 +14,7 @@ const SplashBottom = () => {
             <div className='splash-bottom-contain'>
                 <div className='hoco-finest-video'>
                     <div className='video-padding'>
-                        <iframe id="ytplayer" type="text/html" width="450" height="310"
+                        <iframe id="ytplayer" type="text/html" width="460" height="320"
                             src="https://www.youtube.com/embed/vUwy2gHzcw4"
                             frameborder="0">
                         </iframe>
@@ -38,6 +38,7 @@ const SplashBottom = () => {
                         <medium className = 'features-font'>- Share Comments about the Courts</medium>
                         <medium className = 'features-font'>- Watch Local Basketball Videos</medium>
                         <medium className = 'features-font'>- View Local Games Listings</medium>
+                        <medium className = 'features-font'>- View Local Basketball News</medium>
                     </div>
                 </div>
             </div>

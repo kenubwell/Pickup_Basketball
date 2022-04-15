@@ -17,7 +17,27 @@ let counter6 = 1;
 let counter7 = 1;
 let newcounter = null;
 
+const initial_events = [
+ {
+   title: "Waterloo (10:00 a.m.)",
+   date: new Date("2022-04-09").toISOString().substring(0, 10)
+ },
+
+ {
+  title: "Meadowbrook (02:00 p.m.)",
+  date: new Date("2022-04-30").toISOString().substring(0, 10)
+} ,
+
+{
+  title: "Waterloo (10:00 a.m.)",
+  date: new Date("2022-05-14").toISOString().substring(0, 10)
+} 
+
+]
+
 class Calendar extends React.Component {
+
+
 
     state = {
       events: [
@@ -181,10 +201,10 @@ class Calendar extends React.Component {
                   plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
                   eventColor = 'orange'
                   eventTextColor="black"
-                  events={this.state.calendarEvents}
                   eventDrop={this.drop}
                   eventReceive={this.eventReceive}
                   eventClick={this.eventClick}
+                  initialEvents = {initial_events}
                 />
               </div>
           </div>
