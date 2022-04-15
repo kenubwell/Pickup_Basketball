@@ -25,6 +25,8 @@
      display: block;
      transition: .5s ease;
      backface-visibility: hidden;
+     border-radius: 25px;
+     box-shadow: 4px 2px 5px black;
  }
 
  .court-image:hover{

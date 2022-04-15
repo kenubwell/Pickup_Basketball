@@ -1,6 +1,8 @@
 .lion-image{
     height: 300px;
     width: 490px;
+    border-radius: 25px;
+    box-shadow: 4px 2px 5px black;
 }
 
 .lion-title{

@@ -20,6 +20,8 @@
 .image-contain{
     width: 375px;
     height: 250px;
+    border-radius: 25px;
+    box-shadow: 4px 2px 5px black;
 }
 
 .link-contain-art{

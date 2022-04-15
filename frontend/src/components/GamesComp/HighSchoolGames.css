@@ -5,10 +5,14 @@
 
 .hs-lion-img{
     height: 45px;
+    border-radius: 25px;
+    box-shadow: 4px 2px 5px black;
 }
 
 .hs-lions-logo{
     height: 175px;
+    border-radius: 25px;
+    box-shadow: 4px 2px 5px black;
 }
 
 .highschool-title{

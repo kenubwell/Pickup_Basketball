@@ -17,24 +17,6 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
-img{
-  border-radius: 25px;
-  box-shadow: 4px 2px 5px black;
-}
-
-/* p {
-  font-size: 20px;
-} */
-
-/* button {
-  background-color: transparent;
-  border: 2px solid steelblue;
-  color: steelblue;
-  font-size: 1rem;
-  font-family: inherit;
-  max-width: 100px;
-  padding: 0.5rem 0.5rem;
-} */
 
 button:hover {
   cursor: pointer;
