@@ -12,7 +12,7 @@ const NewsList = () => {
 
 
       async function getArticles(){
-        let response = await axios.get('https://newsapi.org/v2/everything?q=basketball AND (maryland)&sortBy=relevancyAt&pagesize=6&apiKey=2a6db3eb281a4314a632687e0b94a758');
+        let response = await axios.get('https://newsapi.org/v2/everything?q=basketball AND (maryland)&sortBy=relevancyAt&pagesize=6&apiKey=AIzaSyC4R6AN7SmujjPUIGKdyao2Kqitzr1kiRg');
         setArticles(response.data.articles);
       }
 
