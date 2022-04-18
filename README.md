@@ -10,8 +10,11 @@ Website Homepage (Top of Page)
 Website Hompage (Bottom portion)
 <img src="/frontend/public/images/home-about-page.jpg">
 
-Webiste One of the Court Pages
+Webiste one of the Court Pages
 <img src="/frontend/public/images/meadowbrook-court.jpg">
+
+Calendar Page
+<img src="/frontend/public/images/calendar-snippet.jpg">
 
 HoCo Videos Page
 <img src="/frontend/public/images/hoco-videos.jpg">
